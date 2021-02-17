@@ -1,5 +1,5 @@
 {
-  "name": "openvpn-admin",
+  "name": "openvpn_admin",
   "version": "0.3.2",
   "description": "Setup and administration of openvpn with a web interface",
   "dependencies": {
