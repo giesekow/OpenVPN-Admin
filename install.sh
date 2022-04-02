@@ -185,7 +185,7 @@ sed -i "s/group nogroup/group $nobody_group/" "/etc/openvpn/server.conf"
 printf "\n################## Setup firewall ##################\n"
 
 # Make ip forwading and make it persistent
-echo 1 > "/proc/sys/net/ipv4/ip_forward"
+echo 0 > "/proc/sys/net/ipv4/ip_forward"
 echo "net.ipv4.ip_forward = 0" >> "/etc/sysctl.conf"
 
 # Get primary NIC device name
