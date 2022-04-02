@@ -186,7 +186,7 @@ printf "\n################## Setup firewall ##################\n"
 
 # Make ip forwading and make it persistent
 echo 1 > "/proc/sys/net/ipv4/ip_forward"
-echo "net.ipv4.ip_forward = 1" >> "/etc/sysctl.conf"
+echo "net.ipv4.ip_forward = 0" >> "/etc/sysctl.conf"
 
 # Get primary NIC device name
 primary_nic=`route | grep '^default' | grep -o '[^ ]*$'`
